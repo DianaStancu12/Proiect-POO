@@ -40,5 +40,10 @@ int main()
 	{
 		cout << "Randul:" << rand << "," << "Locul:" << i;
 	}
-
+	cout << "Id-urile unice pentru bilete sunt: " << endl;
+	srand(static_cast<unsigned int>(time(nullptr)));
+	for (int i = 1; i <= nrB; i++)
+	{
+		cout << rand() << endl;
+	}
 }
